@@ -5,7 +5,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #0d1117;
+    background-color: #212121;
     color: white;
     flex-direction: column;
 }
@@ -34,6 +34,7 @@ select {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    position: relative;
 }
 
 .key {
@@ -47,6 +48,21 @@ select {
     cursor: pointer;
 }
 
+.key.black {
+    width: 28px;
+    height: 80px;
+    background: black;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.key.black[data-note="C#"] { left: 30px; }
+.key.black[data-note="D#"] { left: 74px; }
+.key.black[data-note="F#"] { left: 162px; }
+.key.black[data-note="G#"] { left: 206px; }
+.key.black[data-note="A#"] { left: 250px; }
+
 .key:active {
     background: #ccc;
 }
@@ -58,4 +74,8 @@ select {
     text-align: center;
     font-size: 12px;
     color: black;
+}
+
+.key.black .key-label {
+    color: white;
 }
