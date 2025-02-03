@@ -1,4 +1,4 @@
-# Synthesizer - Sintetizador Musical en JavaScript
+# Synthesizer
 
 **Synthesizer** es una aplicación web interactiva que funciona como un sintetizador musical. Está diseñada para ser utilizada en dispositivos móviles con un **viewport vertical (Viewport horizontal: en construcción)**, ofreciendo una experiencia intuitiva y centrada en la creación de sonidos. La aplicación incluye un teclado virtual, controles de configuración de sonido y un diseño responsive para una óptima visualización en pantallas pequeñas.
 
