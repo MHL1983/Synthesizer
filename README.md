@@ -63,8 +63,4 @@
 
 - Navegador web compatible con la **Web Audio API** (Chrome, Firefox, Edge, Safari).
 - Dispositivo móvil con pantalla táctil (recomendado) o computadora con mouse.
-<<<<<<< HEAD
 - Conexión a Internet no requerida (la aplicación funciona completamente en el cliente).
-=======
-- Conexión a Internet no requerida (la aplicación funciona completamente en el cliente).
->>>>>>> 5ecac1fe98fc236073d89403220abec1a163f880
