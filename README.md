@@ -13,7 +13,7 @@ El **Synthesizer** es una aplicación web interactiva que funciona como un sinte
 ### Controles de sonido
 
 - **Selector de forma de onda:** Permite elegir entre formas de onda como senoidal, cuadrada, triangular y diente de sierra.
-- **Selector de octava:** Ajusta la octava del sonido generado (opciones de octava 2 a 6).
+- **Selector de octava:** Ajusta la octava del sonido generado (opciones de octava 4 a 6).
 - **Selector de polifonía:** Controla el número de voces simultáneas (de 1 a 4 voces).
 - **Controles ADSR:** Permite ajustar los parámetros de envolvente del sonido (**Ataque, Decaimiento, Sostenido y Liberación**).
 - **Control de volumen:** Regula el volumen general del sintetizador.
