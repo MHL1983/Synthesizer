@@ -2,82 +2,118 @@
 
         body {
             font-family: 'Inter', sans-serif;
+            margin: 0;
+            background-color: #0d1117;
+            color: white;
+            overflow: hidden;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
-            background-color: #0d1117;
+        }
+        /* Estilo del logo "Synthesizer" */
+        .logo {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            font-family: 'Inter', sans-serif;
+            font-size: 24px;
+            font-weight: bold;
             color: white;
-            flex-direction: column;
+            z-index: 1000;
+            cursor: default;
         }
-
-        .container {
-            text-align: center;
+        /* Menú hamburguesa */
+        .menu-icon {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            z-index: 1000;
+            font-size: 24px;
+            color: white;
+            background-color: #1f2937;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-
         .controls {
-            margin-bottom: 20px;
+            font-size: 16px;
+            position: fixed;
+            top: 0;
+            right: -320px;
+            width: 280px;
+            height: 100vh;
+            background-color: #1f2937;
+            padding: 20px;
+            transition: right 0.3s ease;
+            z-index: 999;
+            overflow-y: auto; /* Scroll vertical */
         }
-
+        .controls.active {
+            right: 0;
+        }
         label {
             display: block;
             margin-top: 10px;
             color: #576270;
         }
-
         input[type="range"],
         select {
             width: 100%;
             margin-top: 5px;
         }
-
-        .keyboard {
+        .keyboard-container {
             display: flex;
             justify-content: center;
-            margin-top: 20px;
-            position: relative;
+            align-items: center;
+            height: 100vh;
         }
-
+        .keyboard {
+            display: flex;
+            position: relative;
+            width: fit-content;
+            padding: 10px;
+        }
         .key {
-            width: 40px;
-            height: 120px;
+            width: 60px;
+            height: 200px;
             margin: 2px;
             background: white;
-            border: 1px solid #444;
+            border: 1px solid #1f2937;
             border-radius: 4px;
             position: relative;
             cursor: pointer;
         }
-
         .key.black {
-            width: 28px;
-            height: 80px;
+            width: 40px;
+            height: 120px;
             background: black;
             position: absolute;
             top: 0;
             z-index: 1;
         }
-
-        .key.black[data-note="C#"] { left: 30px; }
-        .key.black[data-note="D#"] { left: 74px; }
-        .key.black[data-note="F#"] { left: 162px; }
-        .key.black[data-note="G#"] { left: 206px; }
-        .key.black[data-note="A#"] { left: 250px; }
-
+        .key.black[data-note="C#4"] { left: 52px; }
+        .key.black[data-note="D#4"] { left: 118px; }
+        .key.black[data-note="F#4"] { left: 250px; }
+        .key.black[data-note="G#4"] { left: 315px; }
+        .key.black[data-note="A#4"] { left: 383px; }
+        .key.black[data-note="C#5"] { left: 515px; }
+        .key.black[data-note="D#5"] { left: 580px; }
         .key:active {
             background: #ccc;
         }
-
         .key-label {
             position: absolute;
-            bottom: 5px;
+            bottom: 10px;
             width: 100%;
             text-align: center;
-            font-size: 12px;
+            font-size: 11px;
             color: black;
         }
-
         .key.black .key-label {
             color: white;
         }

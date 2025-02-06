@@ -1,14 +1,14 @@
 # Synthesizer
 
-El **Synthesizer** es una aplicación web interactiva que funciona como un sintetizador musical. Está diseñada para ser utilizada en dispositivos móviles en **modo vertical** (el modo horizontal se encuentra en desarrollo), ofreciendo una experiencia intuitiva y centrada en la creación de sonidos. La aplicación incluye un teclado virtual, controles de configuración de sonido y un diseño responsive para una visualización óptima en pantallas pequeñas.
+El **Synthesizer** es una aplicación web interactiva que funciona como un sintetizador musical. Está diseñada para ser utilizada en dispositivos móviles, ofreciendo una experiencia intuitiva y centrada en la creación de sonidos. La aplicación incluye un teclado virtual, controles de configuración de sonido y un diseño responsive para una visualización óptima en pantallas pequeñas.
 
 ## Características principales
 
 ### Teclado virtual interactivo
 
-- **12 teclas** (7 blancas y 5 negras) que representan las notas musicales de una octava.
-- Las **teclas blancas** corresponden a las notas naturales (**C, D, E, F, G, A, B**).
-- Las **teclas negras** representan las notas sostenidas (**C#, D#, F#, G#, A#**).
+- **17 teclas** (10 blancas y 7 negras)  que representan las notas musicales de una octava y media.
+- Las **teclas blancas** corresponden a las notas naturales (**C, D, E, F, G, A, B, C, D, E**).
+- Las **teclas negras** representan las notas sostenidas (**C#, D#, F#, G#, A#, C#, D#**).
 
 ### Controles de sonido
 
