@@ -10,6 +10,15 @@ El **Synthesizer** es una aplicación web interactiva que funciona como un sinte
 - Las **teclas blancas** corresponden a las notas naturales (**C, D, E, F, G, A, B, C, D, E**).
 - Las **teclas negras** representan las notas sostenidas (**C#, D#, F#, G#, A#, C#, D#**).
 
+### Control con el teclado de la computadora
+
+- Además de usar el mouse, puedes tocar las notas con el teclado de tu computadora.
+- Cada tecla del teclado está mapeada a una nota específica:
+- Teclas blancas : **A (C4), S (D4), D (E4), F (F4), G (G4), H (A4), J (B4), K (C5), L (D5)**.
+- Teclas negras : **W (C#4), E (D#4), T (F#4), Y (G#4), U (A#4), O (C#5), P (D#5)**.
+- Al presionar una tecla del teclado, se reproduce la nota correspondiente con la misma configuración de ADSR y volumen que al usar el mouse.
+- Esta funcionalidad permite una experiencia más inmersiva y práctica, especialmente para usuarios que prefieren interactuar directamente desde el teclado.
+
 ### Controles de sonido
 
 - **Selector de forma de onda:** Permite elegir entre formas de onda como senoidal, cuadrada, triangular y diente de sierra.
