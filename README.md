@@ -1,54 +1,43 @@
 # Synthesizer
+The **Synthesizer** is an interactive web application that functions as a musical synthesizer. It is designed to be used on mobile devices, offering an intuitive and sound-focused experience. The application includes a virtual keyboard, sound configuration controls, and a responsive design for optimal viewing on small screens.
 
-El **Synthesizer** es una aplicación web interactiva que funciona como un sintetizador musical. Está diseñada para ser utilizada en dispositivos móviles, ofreciendo una experiencia intuitiva y centrada en la creación de sonidos. La aplicación incluye un teclado virtual, controles de configuración de sonido y un diseño responsive para una visualización óptima en pantallas pequeñas.
+## Key Features
+### Interactive Virtual Keyboard
+- **17 keys** (10 white and 7 black) representing the musical notes of one and a half octaves.
+- The **white keys** correspond to natural notes (**C, D, E, F, G, A, B, C, D, E**).
+- The **black keys** represent sharp notes (**C#, D#, F#, G#, A#, C#, D#**).
 
-## Características principales
+### Computer Keyboard Control
+- Each key on the keyboard is mapped to a specific note.
+- White keys: **A (C4), S (D4), D (E4), F (F4), G (G4), H (A4), J (B4), K (C5), L (D5)**.
+- Black keys: **W (C#4), E (D#4), T (F#4), Y (G#4), U (A#4), O (C#5), P (D#5)**.
 
-### Teclado virtual interactivo
+### Sound Controls
+- **Waveform selector:** Allows you to choose between waveforms such as sine, square, triangle, and sawtooth.
+- **Octave selector:** Adjusts the octave of the generated sound (options from octave 4 to 6).
+- **Polyphony selector:** Controls the number of simultaneous voices (from 1 to 4 voices).
+- **ADSR controls:** Allows you to adjust the sound envelope parameters (**Attack, Decay, Sustain, and Release**).
+- **Volume control:** Regulates the overall volume of the synthesizer.
 
-- **17 teclas** (10 blancas y 7 negras)  que representan las notas musicales de una octava y media.
-- Las **teclas blancas** corresponden a las notas naturales (**C, D, E, F, G, A, B, C, D, E**).
-- Las **teclas negras** representan las notas sostenidas (**C#, D#, F#, G#, A#, C#, D#**).
+### Real-time Sound Functionality
+- Uses the **Web Audio API** to generate sounds in real time.
+- The **ADSR controls** allow customization of sound generation and fading.
 
-### Control del teclado de la computadora
+## Usage Instructions
+1. Open the application in a compatible web browser (**Chrome, Firefox, or Edge**).
+2. Tap the virtual keyboard (on touch devices) or click the keys (on computers) to generate sounds.
+3. Use the selectors and sliders to customize the sound by modifying the waveform, octave, polyphony, and ADSR parameters.
+4. Adjust the overall volume according to your preferences.
+5. Explore different combinations to create unique sounds and take advantage of polyphony to play chords or complex melodies.
+6. In addition to using the mouse, you can play notes with your computer's keyboard!
 
-- Cada tecla del teclado está mapeada a una nota específica.
-- Teclas blancas : **A (C4), S (D4), D (E4), F (F4), G (G4), H (A4), J (B4), K (C5), L (D5)**.
-- Teclas negras : **W (C#4), E (D#4), T (F#4), Y (G#4), U (A#4), O (C#5), P (D#5)**.
-- Al presionar una tecla del teclado, se reproduce la nota correspondiente.
+## Technologies Used
+- **HTML5:** For the structure of the application.
+- **CSS3:** For responsive design and visual styles.
+- **JavaScript:** For the application logic and DOM manipulation.
+- **Web Audio API:** For real-time sound generation and manipulation.
 
-
-### Controles de sonido
-
-- **Selector de forma de onda:** Permite elegir entre formas de onda como senoidal, cuadrada, triangular y diente de sierra.
-- **Selector de octava:** Ajusta la octava del sonido generado (opciones de octava 4 a 6).
-- **Selector de polifonía:** Controla el número de voces simultáneas (de 1 a 4 voces).
-- **Controles ADSR:** Permite ajustar los parámetros de envolvente del sonido (**Ataque, Decaimiento, Sostenido y Liberación**).
-- **Control de volumen:** Regula el volumen general del sintetizador.
-
-### Funcionalidad de sonido en tiempo real
-
-- Utiliza la **Web Audio API** para generar sonidos en tiempo real.
-- Los **controles ADSR** permiten personalizar la generación y desvanecimiento de los sonidos.
-
-## Instrucciones de uso
-
-1. Abra la aplicación en un navegador web compatible (**Chrome, Firefox o Edge**).
-2. Toque el teclado virtual (en dispositivos táctiles) o haga clic en las teclas (en computadoras) para generar sonidos.
-3. Utilice los selectores y deslizadores para personalizar el sonido, modificando la forma de onda, octava, polifonía y parámetros ADSR.
-4. Ajuste el volumen general según sus preferencias.
-5. Explore diferentes combinaciones para crear sonidos únicos y aproveche la polifonía para tocar acordes o melodías complejas.
-6. Además de usar el mouse, ¡puedes tocar las notas con el teclado de tu computadora!
-
-## Tecnologías utilizadas
-
-- **HTML5:** Para la estructura de la aplicación.
-- **CSS3:** Para el diseño responsive y los estilos visuales.
-- **JavaScript:** Para la lógica de la aplicación y la manipulación del DOM.
-- **Web Audio API:** Para la generación y manipulación de sonidos en tiempo real.
-
-## Requisitos del sistema
-
-- **Navegador web** compatible con la Web Audio API (**Chrome, Firefox, Edge, Safari**).
-- **Dispositivo móvil** con pantalla táctil (recomendado) o computadora con mouse.
-- **No se requiere conexión a internet**, ya que la aplicación funciona completamente en el cliente.
+## System Requirements
+- **Web browser** compatible with the Web Audio API (**Chrome, Firefox, Edge, Safari**).
+- **Mobile device** with a touch screen (recommended) or a computer with a mouse.
+- **No internet connection required**, as the application works entirely on the client side.
