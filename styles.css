@@ -7,6 +7,7 @@ body {
     color: white;
     overflow: hidden;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -127,8 +128,9 @@ select {
 .key.black[data-note="A#4"] { left: 383px; }
 .key.black[data-note="C#5"] { left: 515px; }
 .key.black[data-note="D#5"] { left: 580px; }
-.key:active {
-    background: #ccc;
+.key:active,
+.key.active {
+    background: #00E494; /* Color de fondo cuando la tecla está activa */
 }
 .key-label {
     position: absolute;
@@ -140,4 +142,13 @@ select {
 }
 .key.black .key-label {
     color: white;
+}
+
+.message {
+    color: #576270;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
