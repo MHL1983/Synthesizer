@@ -1,16 +1,21 @@
 const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+
 // Controladores de ADSR
 const attackControl = document.getElementById('attack');
 const decayControl = document.getElementById('decay');
 const sustainControl = document.getElementById('sustain');
 const releaseControl = document.getElementById('release');
 const volumeControl = document.getElementById('volume');
+
 // Selector de forma de onda
 const waveformSelect = document.getElementById('waveform');
+
 // Selector de octava
 const octaveSelect = document.getElementById('octave');
+
 // Selector de polifonía
 const polyphonySelect = document.getElementById('polyphony');
+
 // Mapeo de notas a frecuencias (afinación estándar)
 const noteFrequencies = {
     'C4': 261.63,
@@ -30,7 +35,8 @@ const noteFrequencies = {
     'D5': 587.33,
     'D#5': 622.25,
     'E5': 659.25
-    };
+};
+
 // Mapeo de teclas del teclado a notas
 const keyboardMap = {
     'KeyA': 'C4',
@@ -49,19 +55,19 @@ const keyboardMap = {
     'KeyO': 'C#5',
     'KeyL': 'D5',
     'KeyP': 'D#5',
-    'keyÑ': 'E5'
-    };
+    'keyÑ': 'E5',
+};
+
+// Conjunto para almacenar las teclas presionadas
+const pressedKeys = new Set();
 
 // Escuchar eventos de teclado
 document.addEventListener('keydown', (event) => {
     const note = keyboardMap[event.code];
     if (note && !pressedKeys.has(event.code)) { // Evitar duplicados
         pressedKeys.add(event.code); // Agregar la tecla al conjunto
-        updatePressedKeysDisplay(); // Actualizar la visualización
-
         const frequency = noteFrequencies[note];
         playNoteWithFrequency(frequency);
-
         // Resaltar la tecla correspondiente
         const keyElement = document.querySelector(`[data-note="${note}"]`);
         if (keyElement) {
@@ -74,8 +80,6 @@ document.addEventListener('keyup', (event) => {
     const note = keyboardMap[event.code];
     if (note) {
         pressedKeys.delete(event.code); // Eliminar la tecla del conjunto
-        updatePressedKeysDisplay(); // Actualizar la visualización
-
         // Desactivar el resaltado de la tecla correspondiente
         const keyElement = document.querySelector(`[data-note="${note}"]`);
         if (keyElement) {
@@ -85,7 +89,6 @@ document.addEventListener('keyup', (event) => {
 });
 
 const keys = document.querySelectorAll('.key');
-
 keys.forEach(key => {
     key.addEventListener('mousedown', () => playNoteWithFrequency(noteFrequencies[key.dataset.note]));
 });
@@ -111,7 +114,7 @@ function playOscillator(frequency) {
         decay: parseFloat(decayControl.value) || 0.2,
         sustain: parseFloat(sustainControl.value) || 0.7,
         release: parseFloat(releaseControl.value) || 0.3
-        };
+    };
     const now = audioContext.currentTime;
     gainNode.gain.setValueAtTime(0, now);
     gainNode.gain.linearRampToValueAtTime(volumeControl.value, now + adsr.attack);
@@ -122,9 +125,8 @@ function playOscillator(frequency) {
     const releaseStart = now + adsr.attack + adsr.decay + sustainTime;
     gainNode.gain.linearRampToValueAtTime(0, releaseStart + adsr.release);
     oscillator.stop(releaseStart + adsr.release);
-
     return oscillator;
-    }
+}
 
 // Función para mostrar/ocultar controles
 function toggleControls() {

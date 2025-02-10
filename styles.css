@@ -93,9 +93,11 @@ select {
 }
 .keyboard-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    color: #576270;
 }
 .keyboard {
     display: flex;
