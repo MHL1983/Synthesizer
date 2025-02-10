@@ -49,7 +49,7 @@ const keyboardMap = {
     'KeyO': 'C#5',
     'KeyL': 'D5',
     'KeyP': 'D#5',
-    'NumpadDecimal': 'E5'
+    'keyÑ': 'E5'
     };
 
 // Escuchar eventos de teclado
