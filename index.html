@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Synthesizer</title>
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon.svg">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -24,7 +24,7 @@
     <!-- Controles ocultos -->
     <div class="controls">
         <label for="volume">Volume</label>
-        <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5">
+        <input type="range" id="volume" min="0" max="1" step="0.01" value="0.1">
         <label for="attack">Attack</label>
         <input type="range" id="attack" min="0" max="2" step="0.01" value="0.5">
         <label for="decay">Decay</label>
@@ -42,6 +42,7 @@
         </select>
         <label for="octave">Octave</label>
         <select id="octave">
+            <option value="3">3</option>
             <option value="4" selected>4</option>
             <option value="5">5</option>
             <option value="6">6</option>

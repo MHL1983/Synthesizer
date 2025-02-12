@@ -112,8 +112,8 @@ function playOscillator(frequency) {
     const adsr = {
         attack: parseFloat(attackControl.value) || 0.1,
         decay: parseFloat(decayControl.value) || 0.2,
-        sustain: parseFloat(sustainControl.value) || 0.7,
-        release: parseFloat(releaseControl.value) || 0.3
+        sustain: parseFloat(sustainControl.value) || 0.2,
+        release: parseFloat(releaseControl.value) || 0.1
     };
     const now = audioContext.currentTime;
     gainNode.gain.setValueAtTime(0, now);
