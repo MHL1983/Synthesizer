@@ -25,6 +25,7 @@ body {
     font-size: 24px;
     font-weight: bold;
     color: white;
+    z-index: 1;
 }
 
 .logo-container2 {
@@ -91,19 +92,17 @@ select {
     width: 100%;
     margin-top: 5px;
 }
-.keyboard-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    color: #576270;
+
+ol {
+list-style-type: none;
 }
+
 .keyboard {
     display: flex;
     position: relative;
     width: fit-content;
     padding: 10px;
+    isolation: isolate;
 }
 .key {
     width: 60px;
@@ -130,10 +129,8 @@ select {
 .key.black[data-note="A#4"] { left: 383px; }
 .key.black[data-note="C#5"] { left: 515px; }
 .key.black[data-note="D#5"] { left: 580px; }
-.key:active,
-.key.active {
-    background: #00E494;
-}
+.key:active, .key.active { background: #00E494; }
+
 .key-label {
     position: absolute;
     bottom: 10px;

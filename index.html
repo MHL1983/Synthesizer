@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Synthesizer</title>
+    <title>Synthesis</title>
     <link rel="icon" href="favicon.svg">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
     <!-- Logo "Synthesizer" -->
     <div class="logo-container">
         <!-- Ícono SVG -->
@@ -65,28 +66,27 @@
             <p class="brand">by CURVES</p>
         </div>  
     </div>
+    </header>
     <!-- Teclado de DO4 a MI5 -->
-    <div class="keyboard-container">
-        <div class="keyboard">
-            <div class="key white" data-note="C4"><div class="key-label">A</div></div>
-            <div class="key black" data-note="C#4"><div class="key-label">W</div></div>
-            <div class="key white" data-note="D4"><div class="key-label">S</div></div>
-            <div class="key black" data-note="D#4"><div class="key-label">E</div></div>
-            <div class="key white" data-note="E4"><div class="key-label">D</div></div>
-            <div class="key white" data-note="F4"><div class="key-label">F</div></div>
-            <div class="key black" data-note="F#4"><div class="key-label">T</div></div>
-            <div class="key white" data-note="G4"><div class="key-label">G</div></div>
-            <div class="key black" data-note="G#4"><div class="key-label">Y</div></div>
-            <div class="key white" data-note="A4"><div class="key-label">H</div></div>
-            <div class="key black" data-note="A#4"><div class="key-label">U</div></div>
-            <div class="key white" data-note="B4"><div class="key-label">J</div></div>
-            <div class="key white" data-note="C5"><div class="key-label">K</div></div>
-            <div class="key black" data-note="C#5"><div class="key-label">O</div></div>
-            <div class="key white" data-note="D5"><div class="key-label">L</div></div>
-            <div class="key black" data-note="D#5"><div class="key-label">P</div></div>
-            <div class="key white" data-note="E5"><div class="key-label">Ñ</div></div>
-        </div>
-    </div>
+    <ol class="keyboard">
+        <li class="key white" data-note="C4"><span class="key-label">A</span></li>
+        <li class="key black" data-note="C#4"><span class="key-label">W</span></li>
+        <li class="key white" data-note="D4"><span class="key-label">S</span></li>
+        <li class="key black" data-note="D#4"><span class="key-label">E</span></li>
+        <li class="key white" data-note="E4"><span class="key-label">D</span></li>
+        <li class="key white" data-note="F4"><span class="key-label">F</span></li>
+        <li class="key black" data-note="F#4"><span class="key-label">T</span></li>
+        <li class="key white" data-note="G4"><span class="key-label">G</span></li>
+        <li class="key black" data-note="G#4"><span class="key-label">Y</span></li>
+        <li class="key white" data-note="A4"><span class="key-label">H</span></li>
+        <li class="key black" data-note="A#4"><span class="key-label">U</span></li>
+        <li class="key white" data-note="B4"><span class="key-label">J</span></li>
+        <li class="key white" data-note="C5"><span class="key-label">K</span></li>
+        <li class="key black" data-note="C#5"><span class="key-label">O</span></li>
+        <li class="key white" data-note="D5"><span class="key-label">L</span></li>
+        <li class="key black" data-note="D#5"><span class="key-label">P</span></li>
+        <li class="key white" data-note="E5"><span class="key-label">Ñ</span></li>
+    </ol>
     <script src="script.js"></script>
 </body>
 </html>
