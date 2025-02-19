@@ -1,4 +1,4 @@
-<img align="center" width="120" height="120" src="images/screenshot.png">
+<img src="images/screenshot.png">
 
 # Synthesizer
 The **Synthesizer** is an interactive web application that functions as a musical synthesizer. It is designed to be used on mobile devices, offering an intuitive and sound-focused experience. The application includes a virtual keyboard, sound configuration controls, and a responsive design for optimal viewing on small screens.
@@ -14,8 +14,6 @@ The **Synthesizer** is an interactive web application that functions as a musica
 - White keys: **A (C4), S (D4), D (E4), F (F4), G (G4), H (A4), J (B4), K (C5), L (D5)**.
 - Black keys: **W (C#4), E (D#4), T (F#4), Y (G#4), U (A#4), O (C#5), P (D#5)**.
 
-<img align="center" src="images/waveforms.svg">
-
 ### Sound Controls
 - **Volume control:** Regulates the overall volume of the synthesizer.
 - **ADSR controls:** Allows you to adjust the sound envelope parameters (**Attack, Decay, Sustain, and Release**).
@@ -23,11 +21,13 @@ The **Synthesizer** is an interactive web application that functions as a musica
 - **Octave selector:** Adjusts the octave of the generated sound (options from octave 4 to 6).
 - **Polyphony selector:** Controls the number of simultaneous voices (from 1 to 4 voices).
 
+<img src="images/waveforms.svg">
+
 ### Real-time Sound Functionality
 - Uses the **Web Audio API** to generate sounds in real time.
 - The **ADSR controls** allow customization of sound generation and fading.
 
-<img align="center" src="images/ADSR.svg">
+<img src="images/ADSR.svg">
 
 ## Usage Instructions
 1. Open the application in a compatible web browser (**Chrome, Firefox, or Edge**).
