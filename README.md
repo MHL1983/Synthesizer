@@ -1,13 +1,15 @@
-<img src="images/screenshot.png">
+![screenshot](images/screenshot.png)
 
 # Synthesizer
 The **Synthesizer** is an interactive web application that functions as a musical synthesizer. It is designed to be used on mobile devices, offering an intuitive and sound-focused experience. The application includes a virtual keyboard, sound configuration controls, and a responsive design for optimal viewing on small screens.
 
 ## Key Features
 ### Interactive Virtual Keyboard
-- **17 keys** (10 white and 7 black) representing the musical notes of one and a half octaves.
+- **17 keys** (10 white and 7 black) representing the musical notes of a tenth or octave + a major third.
 - The **white keys** correspond to natural notes (**C, D, E, F, G, A, B, C, D, E**).
 - The **black keys** represent sharp notes (**C#, D#, F#, G#, A#, C#, D#**).
+
+<img src="images/octaves.png">
 
 ### Computer Keyboard Control
 - Each key on the keyboard is mapped to a specific note.
@@ -21,7 +23,7 @@ The **Synthesizer** is an interactive web application that functions as a musica
 - **Octave selector:** Adjusts the octave of the generated sound (options from octave 4 to 6).
 - **Polyphony selector:** Controls the number of simultaneous voices (from 1 to 4 voices).
 
-<img src="images/waveforms.svg">
+![waveforms](images/waveforms.svg)
 
 ### Real-time Sound Functionality
 - Uses the **Web Audio API** to generate sounds in real time.
