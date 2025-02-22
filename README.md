@@ -9,9 +9,7 @@ The **Synthesizer** is an interactive web application that functions as a musica
 - The **white keys** correspond to natural notes (**C, D, E, F, G, A, B, C, D, E**).
 - The **black keys** represent sharp notes (**C#, D#, F#, G#, A#, C#, D#**).
 
-<img src="images/octaves.jpg">
-
-<img src="images/Piano_frequencies.svg">
+<img src="images/octaves.png">
 
 ### Computer Keyboard Control
 - Each key on the keyboard is mapped to a specific note.
@@ -28,6 +26,8 @@ The **Synthesizer** is an interactive web application that functions as a musica
 - **Polyphony selector:** Controls the number of simultaneous voices (from 1 to 4 voices).
 
 <img src="images/waveforms.svg">
+
+<img src="images/frequencies.svg">
 
 ### Real-time Sound Functionality
 - Uses the **Web Audio API** to generate sounds in real time.
