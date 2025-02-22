@@ -18,6 +18,8 @@ The **Synthesizer** is an interactive web application that functions as a musica
 
 <img src="images/QWERTY_keyboard_diagram.svg">
 
+
+
 ### Sound Controls
 - **Volume control:** Regulates the overall volume of the synthesizer.
 - **ADSR controls:** Allows you to adjust the sound envelope parameters (**Attack, Decay, Sustain, and Release**).
