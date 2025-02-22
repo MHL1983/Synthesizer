@@ -16,6 +16,8 @@ The **Synthesizer** is an interactive web application that functions as a musica
 - White keys: **A (C4), S (D4), D (E4), F (F4), G (G4), H (A4), J (B4), K (C5), L (D5)**.
 - Black keys: **W (C#4), E (D#4), T (F#4), Y (G#4), U (A#4), O (C#5), P (D#5)**.
 
+<img src="images/QWERTY_keyboard_diagram.svg">
+
 ### Sound Controls
 - **Volume control:** Regulates the overall volume of the synthesizer.
 - **ADSR controls:** Allows you to adjust the sound envelope parameters (**Attack, Decay, Sustain, and Release**).
