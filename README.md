@@ -12,6 +12,9 @@ The **Synthesizer** is an interactive web application that functions as a musica
 <img src="images/octaves.png">
 <img src="images/frequencies.svg">
 
+### Popular Chords Progressions
+<img src="images/progressions.svg">
+
 ### Computer Keyboard Control
 - Each key on the keyboard is mapped to a specific note.
 - White keys: **A (C4), S (D4), D (E4), F (F4), G (G4), H (A4), J (B4), K (C5), L (D5)**.
@@ -21,10 +24,10 @@ The **Synthesizer** is an interactive web application that functions as a musica
 
 ### Sound Controls
 - **Volume control:** Regulates the overall volume of the synthesizer.
-- **ADSR controls:** Allows you to adjust the sound envelope parameters (**Attack, Decay, Sustain, and Release**).
 - **Waveform selector:** Allows you to choose between waveforms such as sine, square, triangle, and sawtooth.
 - **Octave selector:** Adjusts the octave of the generated sound (options from octave 4 to 6).
 - **Polyphony selector:** Controls the number of simultaneous voices (from 1 to 4 voices).
+- **ADSR controls:** Allows you to adjust the sound envelope parameters (**Attack, Decay, Sustain, and Release**).
 
 <img src="images/waveforms.svg">
 
