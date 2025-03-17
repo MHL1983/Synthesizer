@@ -24,10 +24,10 @@ The **Synthesizer** is an interactive web application that functions as a musica
 
 ### Sound Controls
 - **Volume control:** Regulates the overall volume of the synthesizer.
-- **Waveform selector:** Allows you to choose between waveforms such as sine, square, triangle, and sawtooth.
+- **ADSR controls:** Allows you to adjust the sound envelope parameters (**Attack, Decay, Sustain, and Release**).
 - **Octave selector:** Adjusts the octave of the generated sound (options from octave 4 to 6).
 - **Polyphony selector:** Controls the number of simultaneous voices (from 1 to 4 voices).
-- **ADSR controls:** Allows you to adjust the sound envelope parameters (**Attack, Decay, Sustain, and Release**).
+- **Waveform selector:** Allows you to choose between waveforms such as sine, square, triangle, and sawtooth.
 
 <img src="images/waveforms.svg">
 
