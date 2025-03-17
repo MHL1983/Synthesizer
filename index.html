@@ -9,63 +9,55 @@
 </head>
 <body>
     <header>
-    <!-- Logo "Synthesizer" -->
-    <div class="logo-container">
-        <!-- Ícono SVG -->
-        <svg width="32" height="32" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M64.002 109.054C57.3828 109.491 50.7529 109.786 44.1203 109.911C37.3563 110.038 30.5042 110.135 23.7665 109.419C22.25 109.258 20.6609 109.092 19.2165 108.575C18.7948 108.424 17.9855 108.131 18.0079 107.563C18.0245 107.143 18.4727 106.818 18.7856 106.604C19.6988 105.98 20.7736 105.574 21.8049 105.191C26.2309 103.545 30.8775 102.441 35.4547 101.305C54.5828 96.5543 74.2254 92.9141 92.7225 85.9835C94.0656 85.4803 95.3999 84.9531 96.7198 84.3923C97.7711 83.9456 98.8135 83.4774 99.8414 82.9797C100.668 82.5795 101.485 82.1603 102.287 81.7149C105.555 79.9017 110.667 76.7389 109.928 72.2997C109.556 70.0672 107.833 68.2666 106.155 66.8716C102.456 63.7965 97.9214 61.6973 93.5333 59.7977C76.1072 52.2541 57.5103 47.6837 39.5775 41.529C33.6317 39.4883 27.3725 37.4443 22.0045 34.1091C20.3904 33.1062 17.3954 31.1842 18.1076 28.862C18.7149 26.8819 21.3438 25.8411 23.0788 25.1623C28.1685 23.1708 33.7326 22.2763 39.113 21.4645C55.4823 18.9946 72.207 18.073 88.7532 18.0037C93.3545 17.9844 97.9719 18.03 102.561 18.3976C104.709 18.5697 107.327 18.6194 109.297 19.6112C111.229 20.5832 108.39 21.8778 107.523 22.2529C107.27 22.3622 107.016 22.4665 106.759 22.5672C106.435 22.6944 106.109 22.8159 105.782 22.9335C105.353 23.0876 104.921 23.2349 104.488 23.3776C97.6253 25.6391 90.5082 27.1888 83.4833 28.8565C66.6146 32.8611 49.2808 36.3748 33.1372 42.8168C29.1396 44.412 25.01 46.2143 21.6412 48.9375C20.0595 50.216 18.4817 51.8677 18.0935 53.9331C17.5968 56.5755 19.3819 58.8949 21.2347 60.5682C25.3991 64.3294 30.8973 66.6935 36.0218 68.8333C54.7672 76.6606 74.6752 81.2716 93.704 88.3191C94.9458 88.779 96.1826 89.2523 97.4113 89.7459C98.4332 90.1563 99.4494 90.5807 100.456 91.0259C101.229 91.3675 101.997 91.7214 102.756 92.093C103.366 92.3921 103.972 92.7027 104.568 93.0296C105.021 93.2781 105.469 93.536 105.909 93.8069C107.892 95.0275 111.49 97.5737 109.292 100.167C108.967 100.551 108.575 100.876 108.164 101.165C107.482 101.643 106.735 102.029 105.976 102.37C104.693 102.945 103.356 103.397 102.008 103.796C99.827 104.442 97.6037 104.946 95.3723 105.389C91.8623 106.085 88.3211 106.622 84.773 107.084C77.8844 107.981 70.9585 108.592 64.0275 109.052" stroke="#00E494" stroke-width="8" stroke-linecap="square" stroke-linejoin="round"/>
-        </svg>    
-        <!-- Texto del logo -->
-        <div class="logo-text">Synthesizer</div>
-    </div>  
-
-    <!-- Ícono de menú hamburguesa -->
-    <div class="menu-icon" onclick="toggleControls()">&#9776;</div>
-    
-    <!-- Controles ocultos -->
-    <div class="controls">
-        <label for="volume">Volume</label>
-        <input type="range" id="volume" min="0" max="1" step="0.01" value="0.1">
-        <label for="attack">Attack</label>
-        <input type="range" id="attack" min="0" max="2" step="0.01" value="0.5">
-        <label for="decay">Decay</label>
-        <input type="range" id="decay" min="0" max="2" step="0.01" value="0.5">
-        <label for="sustain">Sustain</label>
-        <input type="range" id="sustain" min="0" max="1" step="0.01" value="0.5">
-        <label for="release">Release</label>
-        <input type="range" id="release" min="0" max="2" step="0.01" value="0.5">
-        <label for="waveform">Shape</label>
-        <select id="waveform">
-            <option value="sine">Sine</option>
-            <option value="square">Square</option>
-            <option value="triangle">Triangle</option>
-            <option value="sawtooth">Sawtooth</option>
-        </select>
-        <label for="octave">Octave</label>
-        <select id="octave">
-            <option value="3">3</option>
-            <option value="4" selected>4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-        </select>
-        <label for="polyphony">Polyphony</label>
-        <select id="polyphony">
-            <option value="1">1 voice</option>
-            <option value="2">2 voices</option>
-            <option value="3">3 voices</option>
-            <option value="4">4 voices</option>
-        </select>
-
-        <div class="logo-container2">
+        <!-- Logo "Synthesizer" -->
+        <div class="logo-container">
             <!-- Ícono SVG -->
             <svg width="32" height="32" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M64.002 109.054C57.3828 109.491 50.7529 109.786 44.1203 109.911C37.3563 110.038 30.5042 110.135 23.7665 109.419C22.25 109.258 20.6609 109.092 19.2165 108.575C18.7948 108.424 17.9855 108.131 18.0079 107.563C18.0245 107.143 18.4727 106.818 18.7856 106.604C19.6988 105.98 20.7736 105.574 21.8049 105.191C26.2309 103.545 30.8775 102.441 35.4547 101.305C54.5828 96.5543 74.2254 92.9141 92.7225 85.9835C94.0656 85.4803 95.3999 84.9531 96.7198 84.3923C97.7711 83.9456 98.8135 83.4774 99.8414 82.9797C100.668 82.5795 101.485 82.1603 102.287 81.7149C105.555 79.9017 110.667 76.7389 109.928 72.2997C109.556 70.0672 107.833 68.2666 106.155 66.8716C102.456 63.7965 97.9214 61.6973 93.5333 59.7977C76.1072 52.2541 57.5103 47.6837 39.5775 41.529C33.6317 39.4883 27.3725 37.4443 22.0045 34.1091C20.3904 33.1062 17.3954 31.1842 18.1076 28.862C18.7149 26.8819 21.3438 25.8411 23.0788 25.1623C28.1685 23.1708 33.7326 22.2763 39.113 21.4645C55.4823 18.9946 72.207 18.073 88.7532 18.0037C93.3545 17.9844 97.9719 18.03 102.561 18.3976C104.709 18.5697 107.327 18.6194 109.297 19.6112C111.229 20.5832 108.39 21.8778 107.523 22.2529C107.27 22.3622 107.016 22.4665 106.759 22.5672C106.435 22.6944 106.109 22.8159 105.782 22.9335C105.353 23.0876 104.921 23.2349 104.488 23.3776C97.6253 25.6391 90.5082 27.1888 83.4833 28.8565C66.6146 32.8611 49.2808 36.3748 33.1372 42.8168C29.1396 44.412 25.01 46.2143 21.6412 48.9375C20.0595 50.216 18.4817 51.8677 18.0935 53.9331C17.5968 56.5755 19.3819 58.8949 21.2347 60.5682C25.3991 64.3294 30.8973 66.6935 36.0218 68.8333C54.7672 76.6606 74.6752 81.2716 93.704 88.3191C94.9458 88.779 96.1826 89.2523 97.4113 89.7459C98.4332 90.1563 99.4494 90.5807 100.456 91.0259C101.229 91.3675 101.997 91.7214 102.756 92.093C103.366 92.3921 103.972 92.7027 104.568 93.0296C105.021 93.2781 105.469 93.536 105.909 93.8069C107.892 95.0275 111.49 97.5737 109.292 100.167C108.967 100.551 108.575 100.876 108.164 101.165C107.482 101.643 106.735 102.029 105.976 102.37C104.693 102.945 103.356 103.397 102.008 103.796C99.827 104.442 97.6037 104.946 95.3723 105.389C91.8623 106.085 88.3211 106.622 84.773 107.084C77.8844 107.981 70.9585 108.592 64.0275 109.052" stroke="#00E494" stroke-width="8" stroke-linecap="square" stroke-linejoin="round"/>
-            </svg> 
+            </svg>    
             <!-- Texto del logo -->
             <div class="logo-text">Synthesizer</div>
-            <p class="brand">by CURVES</p>
         </div>  
-    </div>
+
+        <!-- Ícono de menú hamburguesa -->
+        <div class="menu-icon" onclick="toggleControls()">&#9776;</div>
+        
+        <!-- Controles ocultos -->
+        <div class="controls">
+            <label for="volume">Volume</label>
+            <input type="range" id="volume" min="0" max="1" step="0.01" value="0.1">
+            <label for="attack">Attack</label>
+            <input type="range" id="attack" min="0" max="2" step="0.01" value="0.5">
+            <label for="decay">Decay</label>
+            <input type="range" id="decay" min="0" max="2" step="0.01" value="0.5">
+            <label for="sustain">Sustain</label>
+            <input type="range" id="sustain" min="0" max="1" step="0.01" value="0.5">
+            <label for="release">Release</label>
+            <input type="range" id="release" min="0" max="2" step="0.01" value="0.5">
+            <label for="waveform">Shape</label>
+            <select id="waveform">
+                <option value="sine">Sine</option>
+                <option value="square">Square</option>
+                <option value="triangle">Triangle</option>
+                <option value="sawtooth">Sawtooth</option>
+            </select>
+            <label for="octave">Octave</label>
+            <select id="octave">
+                <option value="3">3</option>
+                <option value="4" selected>4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+            <label for="polyphony">Polyphony</label>
+            <select id="polyphony">
+                <option value="1">1 voice</option>
+                <option value="2">2 voices</option>
+                <option value="3">3 voices</option>
+                <option value="4">4 voices</option>
+            </select>
+            <label for="recording">Recording</label>
+            <button id="recordButton">Start</button>
+        </div>
     </header>
     <!-- Teclado de DO4 a MI5 -->
     <ol class="keyboard">

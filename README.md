@@ -31,6 +31,7 @@ The **Synthesizer** is an interactive web application that functions as a musica
 ### Real-time Sound Functionality
 - Uses the **Web Audio API** to generate sounds in real time.
 - The **ADSR controls** allow customization of sound generation and fading.
+- Recording: Start and stop recording your performance and download automatically as an audio .wav format file.
 
 <img src="images/ADSR.svg">
 
@@ -41,12 +42,14 @@ The **Synthesizer** is an interactive web application that functions as a musica
 4. Adjust the overall volume according to your preferences.
 5. Explore different combinations to create unique sounds and take advantage of polyphony to play chords or complex melodies.
 6. In addition to using the mouse, you can play notes with your computer's keyboard!
+7. Capture your performance by starting the recording, and simply stop when you’re finished. Once you’ve ended the recording, your audio file will be prepared and the download will begin automatically, saving your work as a high-quality audio file.
 
 ## Technologies Used
 - **HTML5:** For the structure of the application.
 - **CSS3:** For responsive design and visual styles.
 - **JavaScript:** For the application logic and DOM manipulation.
 - **Web Audio API:** For real-time sound generation and manipulation.
+- **MediaRecorder API:** For recording and exporting audio.
 
 ## System Requirements
 - **Web browser** compatible with the Web Audio API (**Chrome, Firefox, Edge, Safari**).

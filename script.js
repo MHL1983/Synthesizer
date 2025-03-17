@@ -1,22 +1,23 @@
+// Inicializa el contexto de audio para generar sonidos en el navegador
 const audioContext = new (window.AudioContext || window.webkitAudioContext)();
 
-// Controladores de ADSR
+// Obtiene los elementos del DOM que controlan los parámetros ADSR y el volumen
 const attackControl = document.getElementById('attack');
 const decayControl = document.getElementById('decay');
 const sustainControl = document.getElementById('sustain');
 const releaseControl = document.getElementById('release');
 const volumeControl = document.getElementById('volume');
 
-// Selector de forma de onda
+// Permite al usuario seleccionar la forma de onda del oscilador
 const waveformSelect = document.getElementById('waveform');
 
-// Selector de octava
+// Selector de octava, Permite al usuario ajustar la octava de las notas a reproducir
 const octaveSelect = document.getElementById('octave');
 
-// Selector de polifonía
+// Selector de polifonía, Controla cuántas notas pueden reproducirse simultáneamente
 const polyphonySelect = document.getElementById('polyphony');
 
-// Mapeo de notas a frecuencias (afinación estándar)
+// Mapeo de notas a frecuencias (afinación estándar), Asocia cada nota musical con su frecuencia correspondiente en Hz
 const noteFrequencies = {
     'C4': 261.63,
     'C#4': 277.18,
@@ -37,7 +38,7 @@ const noteFrequencies = {
     'E5': 659.25
 };
 
-// Mapeo de teclas del teclado a notas
+// Mapeo de teclas del teclado a notas, relaciona las teclas del teclado físico con las notas musicales
 const keyboardMap = {
     'KeyA': 'C4',
     'KeyW': 'C#4',
@@ -58,17 +59,65 @@ const keyboardMap = {
     'keyÑ': 'E5',
 };
 
-// Conjunto para almacenar las teclas presionadas
+// Conjunto para almacenar las teclas presionadas, evita que se reproduzcan múltiples instancias de la misma nota si una tecla se mantiene presionada
 const pressedKeys = new Set();
 
-// Escuchar eventos de teclado
+// Variables para la grabación
+let mediaRecorder;
+let audioChunks = [];
+let isRecording = false;
+
+// Obtener el botón de grabación
+const recordButton = document.getElementById('recordButton');
+
+// Crear un nodo de destino para la grabación
+const destination = audioContext.createMediaStreamDestination();
+const gainNode = audioContext.createGain();
+gainNode.connect(audioContext.destination);
+gainNode.connect(destination);
+
+// Función para comenzar o detener la grabación
+recordButton.addEventListener('click', async () => {
+    if (!isRecording) {
+        // Comenzar grabación
+        audioChunks = [];
+        const stream = destination.stream;
+        mediaRecorder = new MediaRecorder(stream);
+
+        mediaRecorder.ondataavailable = (event) => {
+            if (event.data.size > 0) {
+                audioChunks.push(event.data);
+            }
+        };
+
+        mediaRecorder.onstop = () => {
+            const audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
+            const audioUrl = URL.createObjectURL(audioBlob);
+            const a = document.createElement('a');
+            a.href = audioUrl;
+            a.download = 'grabacion.wav';
+            a.click();
+            URL.revokeObjectURL(audioUrl);
+        };
+
+        mediaRecorder.start();
+        isRecording = true;
+        recordButton.textContent = 'Stop';
+    } else {
+        // Detener grabación
+        mediaRecorder.stop();
+        isRecording = false;
+        recordButton.textContent = 'Start';
+    }
+});
+
+// Escuchar eventos de teclado, detecta cuando una tecla es presionada, reproduce la nota correspondiente y resalta visualmente la tecla.
 document.addEventListener('keydown', (event) => {
     const note = keyboardMap[event.code];
-    if (note && !pressedKeys.has(event.code)) { // Evitar duplicados
-        pressedKeys.add(event.code); // Agregar la tecla al conjunto
+    if (note && !pressedKeys.has(event.code)) {
+        pressedKeys.add(event.code);
         const frequency = noteFrequencies[note];
         playNoteWithFrequency(frequency);
-        // Resaltar la tecla correspondiente
         const keyElement = document.querySelector(`[data-note="${note}"]`);
         if (keyElement) {
             keyElement.classList.add('active');
@@ -76,11 +125,11 @@ document.addEventListener('keydown', (event) => {
     }
 });
 
+// Detecta cuando una tecla es liberada, detiene la reproducción de la nota y elimina el resaltado visual
 document.addEventListener('keyup', (event) => {
     const note = keyboardMap[event.code];
     if (note) {
-        pressedKeys.delete(event.code); // Eliminar la tecla del conjunto
-        // Desactivar el resaltado de la tecla correspondiente
+        pressedKeys.delete(event.code);
         const keyElement = document.querySelector(`[data-note="${note}"]`);
         if (keyElement) {
             keyElement.classList.remove('active');
@@ -88,20 +137,23 @@ document.addEventListener('keyup', (event) => {
     }
 });
 
+// Maneja la interacción del teclado físico para reproducir notas y actualizar la interfaz gráfica
 const keys = document.querySelectorAll('.key');
 keys.forEach(key => {
     key.addEventListener('mousedown', () => playNoteWithFrequency(noteFrequencies[key.dataset.note]));
 });
 
+// Ajusta la frecuencia de la nota según la octava seleccionada y genera múltiples osciladores para simular polifonía
 function playNoteWithFrequency(frequency) {
     const octave = parseInt(octaveSelect.value);
     const polyphony = parseInt(polyphonySelect.value);
     for (let i = 0; i < polyphony; i++) {
-        const freqOffset = (i - Math.floor(polyphony / 2)) * 2; // Desplazamiento de frecuencia para polifonía
+        const freqOffset = (i - Math.floor(polyphony / 2)) * 2;
         playOscillator(frequency * Math.pow(2, octave - 4) + freqOffset);
     }
 }
 
+// Crea un oscilador con la forma de onda seleccionada, aplica el envelope ADSR y reproduce la nota
 function playOscillator(frequency) {
     const oscillator = audioContext.createOscillator();
     const gainNode = audioContext.createGain();
@@ -109,6 +161,8 @@ function playOscillator(frequency) {
     oscillator.frequency.setValueAtTime(frequency, audioContext.currentTime);
     oscillator.connect(gainNode);
     gainNode.connect(audioContext.destination);
+    gainNode.connect(destination); // Conectar al destino de la grabación
+
     const adsr = {
         attack: parseFloat(attackControl.value) || 0.1,
         decay: parseFloat(decayControl.value) || 0.2,
@@ -128,25 +182,8 @@ function playOscillator(frequency) {
     return oscillator;
 }
 
-// Función para mostrar/ocultar controles
+// Alterna la visibilidad de los controles de configuración
 function toggleControls() {
     const controls = document.querySelector('.controls');
     controls.classList.toggle('active');
 }
-
-// Escuchar eventos de teclado
-document.addEventListener('keydown', (event) => {
-    const note = keyboardMap[event.code];
-    if (note) {
-        const frequency = noteFrequencies[note];
-        playNoteWithFrequency(frequency);
-        document.querySelector(`[data-note="${note}"]`).classList.add('active');
-    }
-});
-
-document.addEventListener('keyup', (event) => {
-    const note = keyboardMap[event.code];
-    if (note) {
-        document.querySelector(`[data-note="${note}"]`).classList.remove('active');
-    }
-});

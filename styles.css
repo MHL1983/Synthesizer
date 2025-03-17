@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 body {
     font-family: 'Inter', sans-serif;
@@ -25,26 +25,8 @@ body {
     font-size: 24px;
     font-weight: bold;
     color: white;
-    z-index: 1;
 }
 
-.logo-container2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-    gap: 10px;
-    font-family: 'Inter', sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-}
-
-.brand {
-    font-size: 10px;
-    font-weight: normal;
-    margin-top: -4px;
-}
 
 /* Menú hamburguesa */
 .menu-icon {
@@ -93,6 +75,27 @@ select {
     margin-top: 5px;
 }
 
+button {
+    margin-bottom: 40px;
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #00d188;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #00E494;
+}
+
+.hidden {
+    display: none;
+}
+
 ol {
 list-style-type: none;
 }
@@ -102,7 +105,7 @@ list-style-type: none;
     position: relative;
     width: fit-content;
     padding: 10px;
-    isolation: isolate;
+
 }
 .key {
     width: 60px;
