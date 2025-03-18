@@ -13,10 +13,9 @@ The **Synthesizer** is an innovative and interactive web application that brings
 <img src="images/frequencies.svg">
 
 ### Popular Note Progressions
+Feel free to explore the **audio** folder to listen to a variety of **sample tracks** and **sound demos**. These examples showcase the capabilities of the Synthesizer, offering inspiration and a glimpse into the creative possibilities it unlocks.
 
 <img src="images/progressions.svg">
-
-Feel free to explore the **audio** folder to listen to a variety of **sample tracks** and **sound demos**. These examples showcase the capabilities of the Synthesizer, offering inspiration and a glimpse into the creative possibilities it unlocks.
 
 ### Computer Keyboard Control
 - Each key on the keyboard is mapped to a specific note.
