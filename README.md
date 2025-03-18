@@ -1,7 +1,7 @@
 <img src="images/screenshot.png">
 
 # Synthesizer
-The **Synthesizer** is an interactive web application that functions as a musical synthesizer. It is designed to be used on mobile devices, offering an intuitive and sound-focused experience. The application includes a virtual keyboard, sound configuration controls, and a responsive design for optimal viewing on small screens.
+The **Synthesizer** is an innovative and interactive web application that brings the power of a musical synthesizer to your fingertips. Designed with a focus on accessibility and usability, it offers a seamless and immersive sound creation experience, perfect for both casual users and music enthusiasts. While optimized for mobile devices, it also serves as a versatile plugin for DAWs (Digital Audio Workstations), making it a valuable tool for music production in any environment. Whether you're crafting melodies on the go or integrating it into your DAW workflow, the Synthesizer is designed to inspire creativity and elevate your musical projects.
 
 ## Key Features
 ### Interactive Virtual Keyboard
@@ -12,8 +12,11 @@ The **Synthesizer** is an interactive web application that functions as a musica
 <img src="images/octaves.png">
 <img src="images/frequencies.svg">
 
-### Popular Chords Progressions
+### Popular Note Progressions
+
 <img src="images/progressions.svg">
+
+Feel free to explore the **audio** folder to listen to a variety of **sample tracks** and **sound demos**. These examples showcase the capabilities of the Synthesizer, offering inspiration and a glimpse into the creative possibilities it unlocks.
 
 ### Computer Keyboard Control
 - Each key on the keyboard is mapped to a specific note.
