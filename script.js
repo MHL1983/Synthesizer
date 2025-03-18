@@ -143,13 +143,18 @@ keys.forEach(key => {
     key.addEventListener('mousedown', () => playNoteWithFrequency(noteFrequencies[key.dataset.note]));
 });
 
-// Ajusta la frecuencia de la nota según la octava seleccionada y genera múltiples osciladores para simular polifonía
+// Ajusta la frecuencia de la nota según la octava seleccionada y genera múltiples osciladores para los armónicos
 function playNoteWithFrequency(frequency) {
     const octave = parseInt(octaveSelect.value);
     const polyphony = parseInt(polyphonySelect.value);
-    for (let i = 0; i < polyphony; i++) {
-        const freqOffset = (i - Math.floor(polyphony / 2)) * 2;
-        playOscillator(frequency * Math.pow(2, octave - 4) + freqOffset);
+
+    // Calcula la frecuencia base ajustada por la octava
+    const baseFrequency = frequency * Math.pow(2, octave - 4);
+
+    // Genera osciladores para los armónicos
+    for (let i = 1; i <= polyphony; i++) {
+        const harmonicFrequency = baseFrequency * i; // Múltiplo entero de la frecuencia fundamental
+        playOscillator(harmonicFrequency);
     }
 }
 

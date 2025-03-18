@@ -27,8 +27,8 @@ Feel free to explore the **audio** folder to listen to a variety of **sample tra
 ### Sound Controls
 - **Volume control:** Regulates the overall volume of the synthesizer.
 - **ADSR controls:** Allows you to adjust the sound envelope parameters (**Attack, Decay, Sustain, and Release**).
-- **Octave selector:** Adjusts the octave of the generated sound (options from octave 4 to 6).
-- **Polyphony selector:** Controls the number of simultaneous voices (from 1 to 4 voices).
+- **Octave selector:** Adjusts the octave of the generated sound (options from octave 1 to 8).
+- **Oscillator selector:** Controls the number of simultaneous harmonics (options from 1 to 4 voices).
 - **Waveform selector:** Allows you to choose between waveforms such as sine, square, triangle, and sawtooth.
 
 <img src="images/waveforms.svg">
@@ -36,6 +36,7 @@ Feel free to explore the **audio** folder to listen to a variety of **sample tra
 ### Real-time Sound Functionality
 - Uses the **Web Audio API** to generate sounds in real time.
 - Leverages the **Media Recorder API** to record and export your performance in high-quality format.
+- The **Oscillators** functionality enables the simulation of multiple simultaneous harmonics.
 - The **ADSR controls** allow customization of sound generation and fading.
 
 <img src="images/ADSR.svg">
@@ -43,9 +44,9 @@ Feel free to explore the **audio** folder to listen to a variety of **sample tra
 ## Usage Instructions
 1. Open the application in a compatible web browser (**Chrome, Firefox, or Edge**).
 2. Tap the virtual keyboard (on touch devices) or click the keys (on computers) to generate sounds.
-3. Use the selectors and sliders to customize the sound by modifying the waveform, octave, polyphony, and ADSR parameters.
+3. Use the selectors and sliders to customize the sound by modifying the waveform, octave, oscillators, and ADSR parameters.
 4. Adjust the overall volume according to your preferences.
-5. Explore different combinations to create unique sounds and take advantage of polyphony to play chords or complex melodies.
+5. Explore different combinations to create unique sounds and take advantage of oscillators to generate complex melodies.
 6. In addition to using the mouse, you can play notes with your computer's keyboard!
 7. Capture your performance by starting the recording, and simply stop when you’re done. Your audio file will be downloaded automatically.
 
