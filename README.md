@@ -12,11 +12,6 @@ The **Synthesizer** is an innovative and interactive web application that brings
 <img src="images/octaves.png">
 <img src="images/frequencies.svg">
 
-### Popular Note Progressions
-Feel free to explore the **audio** folder to listen to a variety of **sample tracks** and **sound demos**. These examples showcase the capabilities of the Synthesizer, offering inspiration and a glimpse into the creative possibilities it unlocks.
-
-<img src="images/progressions.svg">
-
 ### Computer Keyboard Control
 - Each key on the keyboard is mapped to a specific note.
 - White keys: **A (C4), S (D4), D (E4), F (F4), G (G4), H (A4), J (B4), K (C5), L (D5)**.
@@ -36,10 +31,20 @@ Feel free to explore the **audio** folder to listen to a variety of **sample tra
 ### Real-time Sound Functionality
 - Uses the **Web Audio API** to generate sounds in real time.
 - Leverages the **Media Recorder API** to record and export your performance in high-quality format.
+
 - The **Oscillators** functionality enables the simulation of multiple simultaneous harmonics.
+
+<img src="images/harmonics.svg">
+
 - The **ADSR controls** allow customization of sound generation and fading.
 
 <img src="images/ADSR.svg">
+
+
+### Popular Note Progressions
+Feel free to explore the **audio** folder to listen to a variety of **sample tracks** and **sound demos**. These examples showcase the capabilities of the Synthesizer, offering inspiration and a glimpse into the creative possibilities it unlocks.
+
+<img src="images/progressions.svg">
 
 ## Usage Instructions
 1. Open the application in a compatible web browser (**Chrome, Firefox, or Edge**).
