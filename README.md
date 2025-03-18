@@ -28,7 +28,7 @@ Feel free to explore the **audio** folder to listen to a variety of **sample tra
 - **Volume control:** Regulates the overall volume of the synthesizer.
 - **ADSR controls:** Allows you to adjust the sound envelope parameters (**Attack, Decay, Sustain, and Release**).
 - **Octave selector:** Adjusts the octave of the generated sound (options from octave 1 to 8).
-- **Oscillator selector:** Controls the number of simultaneous harmonics (options from 1 to 4 voices).
+- **Oscillator selector:** Controls the number of simultaneous harmonics (options from 1 to 8 voices).
 - **Waveform selector:** Allows you to choose between waveforms such as sine, square, triangle, and sawtooth.
 
 <img src="images/waveforms.svg">

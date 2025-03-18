@@ -95,7 +95,7 @@ recordButton.addEventListener('click', async () => {
             const audioUrl = URL.createObjectURL(audioBlob);
             const a = document.createElement('a');
             a.href = audioUrl;
-            a.download = 'grabacion.wav';
+            a.download = 'record.wav';
             a.click();
             URL.revokeObjectURL(audioUrl);
         };
