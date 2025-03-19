@@ -1,7 +1,5 @@
-<img src="images/screenshot.png">
-
 # Synthesizer
-The **Synthesizer** is an innovative and interactive web application that brings the power of a musical synthesizer to your fingertips. Designed with a focus on accessibility and usability, it offers a seamless and immersive sound creation experience, perfect for both casual users and music enthusiasts. While optimized for mobile devices, it also serves as a versatile plugin for DAWs (Digital Audio Workstations), making it a valuable tool for music production in any environment. Whether you're crafting melodies on the go or integrating it into your DAW workflow, the Synthesizer is designed to inspire creativity and elevate your musical projects.
+The **Synthesizer** is an innovative and interactive application that brings the power of a musical instrument to your fingertips. Designed with a focus on accessibility and usability, it offers a seamless and immersive sound creation experience. While optimized for mobile devices, it also serves as a versatile plugin for **DAWs (Digital Audio Workstations)**, making it a valuable tool for music production in any environment. Whether you're crafting melodies on the go or integrating it into your **DAW workflow**, the Synthesizer is designed to inspire creativity and elevate your musical projects.
 
 ## Key Features
 ### Interactive Virtual Keyboard
@@ -12,30 +10,24 @@ The **Synthesizer** is an innovative and interactive web application that brings
 <img src="images/octaves.png">
 <img src="images/frequencies.svg">
 
-### Computer Keyboard Control
 - Each key on the keyboard is mapped to a specific note.
 - White keys: **A (C4), S (D4), D (E4), F (F4), G (G4), H (A4), J (B4), K (C5), L (D5)**.
 - Black keys: **W (C#4), E (D#4), T (F#4), Y (G#4), U (A#4), O (C#5), P (D#5)**.
 
 <img src="images/QWERTY_keyboard_diagram.svg">
 
-### Sound Controls
-- **Volume control:** Regulates the overall volume of the synthesizer.
-- **ADSR controls:** Allows you to adjust the sound envelope parameters (**Attack, Decay, Sustain, and Release**).
-- **Octave selector:** Adjusts the octave of the generated sound (options from octave 1 to 8).
-- **Oscillator selector:** Controls the number of simultaneous harmonics (options from 1 to 8 voices).
-- **Waveform selector:** Allows you to choose between waveforms such as sine, square, triangle, and sawtooth.
+### Sound Design
+- **Volume:** Adjusts the overall volume of the synthesizer.
+- **ADSR:** Customizes the sound envelope parameters (**Attack, Decay, Sustain, and Release**).
+- **Waveform:** Choose from different waveforms (**Sine, Square, Triangle, and Sawtooth**).
+- **Oscillator:** Creates rich and complex sound layers, allowing for multiple simultaneous harmonics.
+- **Octave:** Adjusts the octave frequency of the generated sound.
 
+<img src="images/ADSR.svg">
+<img src="images/harmonics.svg">
 <img src="images/waveforms.svg">
 
-### Real-time Sound Functionality
-- The **Oscillators** functionality enables the simulation of multiple simultaneous harmonics.
-- The **ADSR controls** allow customization of sound generation and fading.
-
-<img src="images/harmonics.svg">
-<img src="images/ADSR.svg">
-
-### Popular Note Progressions
+## Popular Note Progressions
 Feel free to explore the **audio** folder to listen to a variety of **sample tracks** and **sound demos**. These examples showcase the capabilities of the Synthesizer, offering inspiration and a glimpse into the creative possibilities it unlocks.
 
 <img src="images/progressions.svg">
