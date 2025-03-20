@@ -17,17 +17,17 @@ The **Synthesizer** is an innovative and interactive application that brings the
 <img src="images/QWERTY_keyboard_diagram.svg">
 
 ### Sound Design
-- **Volume:** Adjusts the overall volume of the synthesizer.
-- **ADSR:** Customizes the sound envelope parameters (**Attack, Decay, Sustain, and Release**).
 - **Waveform:** Choose from different waveforms (**Sine, Square, Triangle, and Sawtooth**).
 - **Oscillator:** Creates rich and complex sound layers, allowing for multiple simultaneous harmonics.
-- **Octave:** Adjusts the octave frequency of the generated sound.
+- **Octave:** Selects the octave frequency of the sound.
+- **Volume:** Adjusts the overall volume of the synthesizer.
+- **ADSR:** Customizes the sound envelope parameters (**Attack, Decay, Sustain, and Release**).
 
-<img src="images/ADSR.svg">
-<img src="images/harmonics.svg">
 <img src="images/waveforms.svg">
+<img src="images/harmonics.svg">
+<img src="images/ADSR.svg">
 
-## Popular Note Progressions
+## Popular Note Movements
 Feel free to explore the **audio** folder to listen to a variety of **sample tracks** and **sound demos**. These examples showcase the capabilities of the Synthesizer, offering inspiration and a glimpse into the creative possibilities it unlocks.
 
 <img src="images/progressions.svg">

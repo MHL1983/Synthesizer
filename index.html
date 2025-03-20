@@ -24,16 +24,6 @@
         
         <!-- Controles ocultos -->
         <div class="controls">
-            <label for="volume">Volume</label>
-            <input type="range" id="volume" min="0" max="1" step="0.01" value="0.1">
-            <label for="attack">Attack</label>
-            <input type="range" id="attack" min="0" max="2" step="0.01" value="0.5">
-            <label for="decay">Decay</label>
-            <input type="range" id="decay" min="0" max="2" step="0.01" value="0.5">
-            <label for="sustain">Sustain</label>
-            <input type="range" id="sustain" min="0" max="1" step="0.01" value="0.5">
-            <label for="release">Release</label>
-            <input type="range" id="release" min="0" max="2" step="0.01" value="0.5">
             <label for="waveform">Shape</label>
             <select id="waveform">
                 <option value="sine">Sine</option>
@@ -41,6 +31,19 @@
                 <option value="triangle">Triangle</option>
                 <option value="sawtooth">Sawtooth</option>
             </select>
+
+            <label for="polyphony">Oscillators</label>
+            <select id="polyphony">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="7">8</option>
+            </select>
+
             <label for="octave">Octave</label>
             <select id="octave">
                 <option value="1">1</option>
@@ -52,17 +55,22 @@
                 <option value="7">7</option>
                 <option value="8">8</option>
             </select>
-            <label for="polyphony">Oscillator</label>
-            <select id="polyphony">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="7">8</option>
-            </select>
+
+            <label for="attack">Attack</label>
+            <input type="range" id="attack" min="0" max="2" step="0.01" value="0.5">
+
+            <label for="decay">Decay</label>
+            <input type="range" id="decay" min="0" max="2" step="0.01" value="0.5">
+
+            <label for="sustain">Sustain</label>
+            <input type="range" id="sustain" min="0" max="1" step="0.01" value="0.5">
+            
+            <label for="release">Release</label>
+            <input type="range" id="release" min="0" max="2" step="0.01" value="0.5">
+
+            <label for="volume">Volume</label>
+            <input type="range" id="volume" min="0" max="1" step="0.01" value="0.1">
+
             <label for="recording">Recording</label>
             <button id="recordButton">Start</button>
         </div>
