@@ -48,7 +48,13 @@ Feel free to explore the **audio** folder to listen to a variety of **sample tra
 - **Web Audio API:** For real-time sound generation and manipulation.
 - **Media Recorder API:** For recording and exporting audio.
 
-## System Requirements
+## Web System Requirements
 - **Web browser** compatible with the Web Audio API (**Chrome, Firefox, Edge, Safari**).
-- **Mobile device** with a touch screen (recommended) or a computer with a mouse.
+- **Mobile device** with a touch screen or a computer with keyboard and a mouse.
 - **No internet connection required**, as the application works entirely on the client side.
+
+## Win System Requirements
+- **Operating System:** Windows 7 or higher (Windows 10/11/12 recommended).
+- **Memory:** At least 2 GB of RAM (4 GB or more recommended).
+- **Disk Space:** At least 200 MB of free space.
+- **Processor:** 1 GHz or higher (2 or more cores recommended).
