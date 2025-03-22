@@ -8,7 +8,6 @@ The **Synthesizer** is an innovative and interactive application that brings the
 - The **black keys** represent sharp notes (**C#, D#, F#, G#, A#, C#, D#**).
 
 <img src="images/octaves.png">
-<img src="images/frequencies.svg">
 
 - Each key on the keyboard is mapped to a specific note.
 - White keys: **A (C4), S (D4), D (E4), F (F4), G (G4), H (A4), J (B4), K (C5), L (D5)**.
@@ -20,11 +19,12 @@ The **Synthesizer** is an innovative and interactive application that brings the
 - **Waveform:** Choose from different waveforms (**Sine, Square, Triangle, and Sawtooth**).
 - **Oscillator:** Creates rich and complex sound layers, allowing for multiple simultaneous harmonics.
 - **Octave:** Selects the octave frequency of the sound.
-- **Volume:** Adjusts the overall volume of the synthesizer.
 - **ADSR:** Customizes the sound envelope parameters (**Attack, Decay, Sustain, and Release**).
+- **Volume:** Adjusts the overall volume of the synthesizer.
 
 <img src="images/waveforms.svg">
 <img src="images/harmonics.svg">
+<img src="images/frequencies.svg">
 <img src="images/ADSR.svg">
 
 ## Popular Note Movements
@@ -53,7 +53,7 @@ Feel free to explore the **audio** folder to listen to a variety of **sample tra
 - **Mobile device** with a touch screen or a computer with keyboard and a mouse.
 - **No internet connection required**, as the application works entirely on the client side.
 
-## Win System Requirements
+## Win32-x64 System Requirements
 - **Operating System:** Windows 7 or higher (Windows 10/11/12 recommended).
 - **Memory:** At least 2 GB of RAM (4 GB or more recommended).
 - **Disk Space:** At least 200 MB of free space.
