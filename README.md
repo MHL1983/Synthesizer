@@ -53,8 +53,15 @@ Feel free to explore the **audio** folder to listen to a variety of **sample tra
 - **Mobile device** with a touch screen or a computer with keyboard and a mouse.
 - **No internet connection required**, as the application works entirely on the client side.
 
-## Win32-x64 System Requirements
+## Win32-x64
 - **Operating System:** Windows 7 or higher (Windows 10/11/12 recommended).
 - **Memory:** At least 2 GB of RAM (4 GB or more recommended).
 - **Disk Space:** At least 200 MB of free space.
 - **Processor:** 1 GHz or higher (2 or more cores recommended).
+
+## macOS-arm64
+
+- **Operating System:** 10.14 or later
+- **RAM:** 4 GB (8 GB recommended)
+- **Storage:** At least 300 MB of free space.
+- **Processor:** Intel or Apple Silicon
