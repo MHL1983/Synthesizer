@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+.no-select {
+    -webkit-user-select: none; /* Para navegadores basados en WebKit (Chrome, Safari) */
+    -moz-user-select: none;    /* Para Firefox */
+    -ms-user-select: none;     /* Para Internet Explorer/Edge (versiones antiguas) */
+    user-select: none;         /* Estándar moderno */
+}
+
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -25,6 +32,10 @@ body {
     font-size: 24px;
     font-weight: bold;
     color: white;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 
@@ -44,6 +55,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .controls {
     display: flex;
@@ -60,6 +75,10 @@ body {
     transition: right 0.3s ease;
     z-index: 999;
     overflow-y: auto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .controls.active {
     right: 0;
@@ -98,6 +117,10 @@ button:hover {
 
 ol {
 list-style-type: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
 }
 
 .keyboard {
