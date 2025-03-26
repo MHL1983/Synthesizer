@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-.no-select {
-    -webkit-user-select: none; /* Para navegadores basados en WebKit (Chrome, Safari) */
-    -moz-user-select: none;    /* Para Firefox */
-    -ms-user-select: none;     /* Para Internet Explorer/Edge (versiones antiguas) */
-    user-select: none;         /* Estándar moderno */
-}
-
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
