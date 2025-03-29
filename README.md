@@ -6,11 +6,13 @@ The **Synthesizer** is an innovative and interactive application that brings the
 - **17 keys** (10 white and 7 black) representing the musical notes of a tenth or octave + a major third.
 - The **white keys** correspond to natural notes (**C, D, E, F, G, A, B, C, D, E**).
 - The **black keys** represent sharp notes (**C#, D#, F#, G#, A#, C#, D#**).
-<img src="images/harmonic_functions.svg">
+
+<img src="images/notation.png">
 
 - Each key on the keyboard is mapped to a specific note.
 - White keys: **A (C4), S (D4), D (E4), F (F4), G (G4), H (A4), J (B4), K (C5), L (D5)**.
 - Black keys: **W (C#4), E (D#4), T (F#4), Y (G#4), U (A#4), O (C#5), P (D#5)**.
+
 <img src="images/QWERTY_keyboard_diagram.svg">
 
 ### Sound Design
@@ -19,14 +21,11 @@ The **Synthesizer** is an innovative and interactive application that brings the
 - **Octave:** Selects the octave frequency of the sound.
 - **ADSR:** Customizes the sound envelope parameters (**Attack, Decay, Sustain, and Release**).
 - **Volume:** Adjusts the overall volume of the synthesizer.
+
 <img src="images/waveforms.svg">
 <img src="images/harmonics.svg">
-<img src="images/frequencies.svg">
+<img src="images/octaves.svg">
 <img src="images/ADSR.svg">
-
-## Chords
-A chord is a set of three or more notes sounded simultaneously, arranged at specific intervals to create harmony. They are built from a root note (the one that gives the chord its name) and are formed by superimposing notes, usually at intervals of thirds (major or minor). They provide harmonic structure, generate emotion, and serve as a foundation for melodies and accompaniment.
-<img src="images/c-chords.svg">
 
 ## Scales
 A scale is an ordered sequence of notes within a specific range (usually an octave), following a pattern of intervals (distances between notes). Scales form the foundation of melody, harmony, and chords.
@@ -35,10 +34,17 @@ A scale is an ordered sequence of notes within a specific range (usually an octa
 - **Tonic:** The root note that names the scale.
 - **Intervals:** Steps (whole/half) between notes.
 - **Degrees:** Numbered/tonal positions (e.g., I, II, III).
+
 <img src="images/c-scales.svg">
+
+## Chords
+A chord is a set of three or more notes sounded simultaneously, arranged at specific intervals to create harmony. They are built from a root note (the one that gives the chord its name) and are formed by superimposing notes, usually at intervals of thirds (major or minor). They provide harmonic structure, generate emotion, and serve as a foundation for melodies and accompaniment.
+
+<img src="images/c-chords.svg">
 
 ## Popular Note Movements
 Feel free to explore the **audio** folder to listen to a variety of **sample tracks** and **sound demos**. These examples showcase the capabilities of the Synthesizer, offering inspiration and a glimpse into the creative possibilities it unlocks.
+
 <img src="images/movements.svg">
 
 ## Usage Instructions
