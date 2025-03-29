@@ -7,7 +7,7 @@ The **Synthesizer** is an innovative and interactive application that brings the
 - The **white keys** correspond to natural notes (**C, D, E, F, G, A, B, C, D, E**).
 - The **black keys** represent sharp notes (**C#, D#, F#, G#, A#, C#, D#**).
 
-<img src="images/octaves.png">
+<img src="images/harmonic_functions.svg">
 
 - Each key on the keyboard is mapped to a specific note.
 - White keys: **A (C4), S (D4), D (E4), F (F4), G (G4), H (A4), J (B4), K (C5), L (D5)**.
@@ -24,13 +24,15 @@ The **Synthesizer** is an innovative and interactive application that brings the
 
 <img src="images/waveforms.svg">
 <img src="images/harmonics.svg">
-<img src="images/frequencies.svg">
+<img src="images/octaves.svg">
 <img src="images/ADSR.svg">
 
 ## Popular Note Movements
 Feel free to explore the **audio** folder to listen to a variety of **sample tracks** and **sound demos**. These examples showcase the capabilities of the Synthesizer, offering inspiration and a glimpse into the creative possibilities it unlocks.
 
-<img src="images/progressions.svg">
+<img src="images/c-chords.svg">
+<img src="images/c-scales.svg">
+<img src="images/movements.svg">
 
 ## Usage Instructions
 1. Open the application in a compatible web browser (**Chrome, Firefox, or Edge**).
